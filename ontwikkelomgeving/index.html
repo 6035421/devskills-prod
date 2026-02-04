@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Schrijf je in voor onze nieuwsbrief">
+    <meta name="keywords" content="Nieuwsbrief">
+    <meta name="author" content="L. Hoogenboom">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aanvraag Nieuwsbrief</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <title>Aanvraag nieuwsbrief</title>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Aanvraag nieuwsbrief</h1>
-        <form id="newsletterForm" novalidate>
-            <div class="form-group">
-                <label for="voornaam">Wat is uw voornaam! *</label>
-                <input type="text" id="voornaam" name="voornaam" required>
-            </div>
+
+    <form method="post" action="">
+            <h1>Aanvraag nieuwsbrief</h1>
             
-            <div class="form-group">
-                <label for="tussenvoegsel">Heeft u een tussenvoegsel?</label>
-                <input type="text" id="tussenvoegsel" name="tussenvoegsel">
-            </div>
-            
-            <div class="form-group">
-                <label for="achternaam">Wat is uw achternaam? *</label>
-                <input type="text" id="achternaam" name="achternaam" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="geboortedatum">Geboortedatum *</label>
-                <input type="date" id="geboortedatum" name="geboortedatum" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="straatnaam">Wat is uw straatnaam en nummer? *</label>
-                <input type="text" id="straatnaam" name="straatnaam" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="postcode">Wat is uw postcode? *</label>
-                <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}[A-Z]{2}" placeholder="1234AB" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="woonplaats">Wat is uw woonplaats? *</label>
-                <input type="text" id="woonplaats" name="woonplaats" required>
-            </div>
-            
-            <div class="form-group checkbox-group">
-                <input type="checkbox" id="akkoord" name="akkoord" required>
-                <label for="akkoord">Ik ga akkoord met de voorwaarden zoals vermeld op de website! *</label>
-            </div>
-            
-            <button type="submit" class="submit-btn">Verzenden</button>
-        </form>
-    </div>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="Voornaam" placeholder="Voornaam" required>
+                </td>
+                <td>
+                    <input type="text" name="Tussenvoegsel" placeholder="TussenVoegsel">
+                </td>
+                <td>
+                    <input type="text" name="Achternaam" placeholder="Achternaam" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="text" name="Straat" placeholder="Straatnaam en nummer" class="straat" required>
+                </td>
+                <td>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" name="Postcode" placeholder="Postcode" required>
+                </td>
+                <td>
+                    <input type="text" name="Woonplaats" placeholder="Woonplaats" required>
+                </td>
+                <td>
+                    <input type="tel" name="Telefoon" placeholder="Telefoon nummer" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <input type="checkbox" id="voorwaarden" name="akkoord" required></input>
+                    <label for="voorwaarden">Ik ga akkoord met de voorwaarden zoals vermeld op de website.</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <input type="submit" value="Verstuur">
+                </td>
+            </tr>
+        </table>
+    </form>
+
 </body>
+
 </html>
