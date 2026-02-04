@@ -12,5 +12,9 @@ form {
 }
 
 td > .straat {
-    width:98%
+    width:97%
+}
+
+.form > input {
+    padding:4px;
 }
