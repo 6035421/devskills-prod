@@ -1,0 +1,20 @@
+html, body {
+    margin:0px;
+    height:100%;
+}
+
+form {
+    width:max-content;
+
+    padding-left:30px;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+
+td > .straat {
+    width:97%
+}
+
+.form > input {
+    padding:4px;
+}
